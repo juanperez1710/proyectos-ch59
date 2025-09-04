@@ -14,6 +14,7 @@ console.log(personalInformation.aboutMe())
 hello:()=>"hola"+this.name;
 console.log(personalInformation.hello)
 
-showAnimals: function(){
+showAnimals: function()
+{
     this.favoriteAnimals.map((animal)=> console.log(animal))
 }
