@@ -29,3 +29,30 @@ const pedidoEduardo= new pedido("Eduardo","Sandías","12/09/2025","Calle Juárez
 console.log(pedidoEduardo);
 const pedidoLuis= new pedido("Luis","Mandarinas","15/09/2025","Calle Duraznos 33");
 console.log(pedidoLuis);
+
+function Journey(start,end){
+    this.start=start;
+    this.end=end;
+}
+const from=process.argv[2];
+const to = process.argv[3];
+
+
+// Type your code above this line!
+
+const travel = new Journey(from, to)
+
+console.log("Booking a taxi from " + travel.start + " to " + travel.end + ".")
+//2
+function Mail(subj, msg) {
+    this.subject = subj
+    this.message = msg
+  }
+  
+  // Type your code below this line!
+  const subj=process.argv[2];
+  const msg=process.argv[3];
+  const newMail = new Mail(process.argv[2],process.argv[3] )
+  // Type your code above this line!
+  
+  console.log(newMail.subject + ": " + newMail.message)
