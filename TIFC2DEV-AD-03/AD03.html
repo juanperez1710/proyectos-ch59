@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes de HTML</title>
+</head>
+<h1>Contador de clics</h1>
+    
+    Has hecho clic <span id="contador">0</span> veces. <br>
+    
+    <button onclick="incrementarContador()">Haz clic aquí</button> 
+    
+    <script> 
+        // Creamos una variable para llevar la cuenta de los clics
+        let contador = 0;
+        
+        function incrementarContador() {
+            contador++;
+            
+            // Actualizamos el contenido de la etiqueta span
+            document.getElementById('contador').textContent = contador;
+            
+            console.log('El contador ahora es ' + contador);
+            
+            // Cuando el contador llegue a 10, mostramos una alerta
+            if (contador === 10) { 
+                alert('¡Has hecho clic 10 veces!');
+            }
+        }
+    </script>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+Nombre: 
+<input type="text" id="nombre">
+<span id="mensaje" style="color: rgb(13, 129, 114);""></span>
+<br>
+<button type="button" onclick="enviar()">Enviar</button>
+    <script>
+        function enviar(){
+            const nombre=document.getElementById('nombre').value;
+            console.log('Nombre ingresado: '+nombre);
+            if(nombre.trim()===''){
+                alert('Por favor, escribe tu nombre completo');
+                return;
+            }
+            document.getElementById('mensaje').textContent='  \n Hola, '+ nombre + '. ¡Gracias por suscribirte!';
+            alert('Registro exitoso '+ nombre);
+        }
+    </script>
+
+</body>
+</html>
