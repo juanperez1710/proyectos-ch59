@@ -1,0 +1,43 @@
+body{
+    color:white;
+    padding: 20px;
+    padding-left: 10px;
+    background-color: rgb(60, 8, 80);
+    align-items: center;
+    align-content: center;
+}
+.btn{
+    background-color: rgb(87, 57, 143);
+    margin-left: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: rgb(124, 71, 224);
+    
+}
+.btn:hover{
+    background-color: rgb(58, 19, 109);
+    border-color: rgb(34, 3, 63);
+}
+.card{
+    background-color: rgb(80, 29, 122);
+    text-align: center;
+    height: 400px;
+    width: 100px;
+    align-items: center;
+    align-content:  center;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: white
+}
+.card-title{
+    text-align: center;
+}
+.car-text{
+    text-align: center;
+}
+.card-img-top{
+    padding: 10px;
+    width: 180px;
+    height: 200px;
+}
