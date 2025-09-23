@@ -1,5 +1,10 @@
 body{
-    color:white;
+    /* *Agregar imágenes en css de fondo*/
+/* *propiedad background-image*/
+/**con esta propiedad podemos colocar una imagen de fondo en cualquier elemento div, body o section*/
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-montanas-acuarela-azul_23-2149250282.jpg?semt=ais_hybrid&w=740&q=80);
+    background-size: cover;
+    color:black;
     padding: 20px;
     padding-left: 10px;
     background-color: rgb(60, 8, 80);
@@ -40,4 +45,27 @@ body{
     padding: 10px;
     width: 180px;
     height: 200px;
+}.gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Opcional: para esquinas redondeadas */
+            transition: transform 0.3s ease; /* Opcional: para un efecto de zoom al pasar el mouse */
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05); /* Opcional: efecto de zoom */}
+/*?¿Cuándo utilizarlas?* 
+Diseño responsivo personalizado:
+Ajustar fuentes, márgenes o layout en tamaños de pantalla específicos.
+Ejemplo: Cambiar el tamaño del menú en pantallas de móvil.
+Cuando un framework (como Bootstrap) no cubre tu necesidad:
+Si usas Bootstrap, normalmente ya incluye media queries en sus clases (col-md, d-sm-none, etc.).
+Solo agrega tus propias media queries cuando necesitas un estilo único que el framework no ofrece.
+Optimización para dispositivos concretos:
+Orientación de pantalla (portrait/landscape).
+Alta densidad de píxeles (pantallas Retina). */
+@media (max-width: 700px){
+    body{
+        background-color: rgb(100, 179, 152);
+    }
 }
+

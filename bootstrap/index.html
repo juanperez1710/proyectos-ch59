@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hola Mundo</h1>
+ <!-- <h1>Hola Mundo</h1>
    <button class="btn">Botón 1</button>
   <div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-primary">Botón Izq.</button>
@@ -26,8 +26,110 @@
     <p class="card-text">Este es un ejemplo de cómo hacer y personalizar una tarjeta usando bootstrap</p>
     <a href="#" class="btn btn-primary">Ir</a>
   </div>
+</div>-->
+<div class="container mt-4"> <!--12 columnas individuales-->
+  <div class="row">
+    <div class="col-1 border">1</div>
+    <div class="col-1 border">2</div>
+    <div class="col-1 border">3</div>
+    <div class="col-1 border">4</div>
+    <div class="col-1 border">5</div>
+    <div class="col-1 border">6</div>
+    <div class="col-1 border">7</div>
+    <div class="col-1 border">8</div>
+    <div class="col-1 border">9</div>
+    <div class="col-1 border">10</div>
+    <div class="col-1 border">11</div>
+    <div class="col-1 border">12</div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-4 border">1</div>
+    <div class="col-4 border">2</div>
+    <div class="col-4 border">3</div>
+  </div>
+  <div class="row mt-3 border">
+    <div class="col-2 border">1</div>
+    <div class="col-2 border">2</div>
+    <div class="col-2 border">3</div>
+    <div class="col-2 border">4</div>
+    <div class="col-2 border">5</div>
+    <div class="col-2 border">6</div>
+  </div>
+  <!-- 1 columna que agrupe todo el ancho (12 columnas)-->
+   <div class="row mt-1 border">
+  <div class="col-12 border">1</div>
+  </div>
 </div>
-   <!-- Este es el link del archivo script de bootstrap, se agregó también el popper-->
+<br>
+<!-- agregar imagenes en htmk con etiqueta img, insertamos la imagen directamente en el documento ya sea por ruta o por url. requiere el atributo src(ruta) y alt(texto alternativo)-->
+<!--<img src="images/bootstrap.png" alt="logo bootstrap" width="100px">
+  Este es el link del archivo script de bootstrap, se agregó también el popper-->
+  <br>
+  <hr>
+  <br>
+    <!-- 
+  Clases Bootstrap aplicadas:
+  col-lg-4  -> En pantallas grandes (≥992 px) el elemento ocupa 4 de las 12 columnas del grid (1/3 del ancho).
+  col-md-12 -> En pantallas medianas (≥768 px) el elemento ocupa las 12 columnas (ancho completo).
+  mb-4      -> Margen inferior de tamaño 4 (~1.5rem) en todos los tamaños de pantalla.
+  mb-lg-0   -> En pantallas grandes elimina el margen inferior (sobrescribe mb-4 en ese breakpoint).
+-->
+  <!-- <div class="row">
+    <div class="col-lg-4 col-md-12 mb-lg-0">
+       
+  Clases Bootstrap aplicadas:
+  w-100           -> ancho del elemento al 100% del contenedor padre
+  shadow-1-strong -> sombra de nivel 1 con mayor intensidad para resaltar el elemento
+  rounded         -> esquinas redondeadas (radio estándar)
+  mb-4            -> margen inferior (aprox. 1.5rem) para separar este elemento del siguiente
+-->
+<!--   
+      <img src="images/laelia.jpg" height="300px" width="300 px" class="w-100 shadow-1-strong rounded mb-4" alt="laelia automnialis">
+      <img src="images/fale.jpg" height="300px" width="300px" class="w-100 shadow-1-strong rounded mb-4" alt="phalenopsis">
+       <img src="images/cimbi.jpg" height="300px" width="300px" class="w-100 shadow-1-strong rounded mb-4" alt="cimbidium">
+       <img src="images/peris.jpg" height="300px" width="300px" class="w-100 shadow-1-strong rounded mb-4" alt="peristeria elata">
+       <img src="images/licaste.jpg" height="300px" width="300px" class="w-100 shadow-1-strong rounded mb-4" alt="peristeria elata">
+    </div>
+  </div>-->   
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Mi Galería de Fotos</h1>
+    <div class="row">
+        
+        <div class="col-sm-6 col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/cimbi.jpg" class="img-fluid" alt="cimbidium">
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/fale.jpg" class="img-fluid" alt="falenopsis">
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/laelia.jpg" class="img-fluid" alt="laelia speciosa">
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/licaste.jpg" class="img-fluid" alt="lycaste aromatica">
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/peris.jpg" class="img-fluid" alt="peristeria elata">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
