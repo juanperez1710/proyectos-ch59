@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(2, 48, 42) !important;
+    color: white !important;
+}
+.navbar{
+    background-color: rgb(8, 110, 110) !important;
+}
+.row{
+    background-color:rgb(8, 110, 110) !important;
+    color: black;
+}
+.btn{
+    background-color: rgb(4, 63, 43) !important;
+    border-color: rgb(2, 22, 15) !important;
+}
+.btn:hover{
+    background-color: rgb(2, 22, 15) !important;
+    border-color: rgb(56, 104, 87) !important;
+
+}
+.alert{
+    background-color: rgb(2, 22, 15) !important;
+    color: white !important;
+}
