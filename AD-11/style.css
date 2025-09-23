@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(231, 243, 204);
+}
+.card{
+    align-content: center;
+    align-self: center;
+    background-color: rgb(61, 121, 101);
+    color: white;
+    text-decoration: solid;
+}
