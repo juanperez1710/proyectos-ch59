@@ -1,0 +1,13 @@
+.container-j{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(288px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  border: 10px;
+  border-color: black ;
+}
+.card-img-top{
+    height: 300px;
+    width: auto;
+    align-items: center;
+}
