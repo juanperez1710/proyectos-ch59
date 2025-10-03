@@ -28,8 +28,8 @@ function ordenarNumeros(){
 
        outputHTML=`
           <p><strong>Mayor a Menor:</strong> <span class="fw-bold">${ordenMayorMenor.join(" , ")}</span></p>
-                        <p><strong>Menor a Mayor:</strong> <span class="fw-bold">${ordenMenorMayor.join(" , ")}</span></p>
-                    `;
+          <p><strong>Menor a Mayor:</strong> <span class="fw-bold">${ordenMenorMayor.join(" , ")}</span></p>
+        `;
     }
       resultadoDiv.querySelector('.card-body').innerHTML = outputHTML;
             resultadoDiv.className = `card shadow-sm mx-auto mt-4 mb-5 card-custom ${cardClass}`;
