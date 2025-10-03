@@ -32,6 +32,6 @@ function ordenarNumeros(){
         `;
     }
       resultadoDiv.querySelector('.card-body').innerHTML = outputHTML;
-            resultadoDiv.className = `card shadow-sm mx-auto mt-4 mb-5 card-custom ${cardClass}`;
-            resultadoDiv.style.display = 'block'; 
+      resultadoDiv.className = `card shadow-sm mx-auto mt-4 mb-5 card-custom ${cardClass}`;
+      resultadoDiv.style.display = 'block'; 
 }
