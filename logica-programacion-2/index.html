@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Conversor de temperatura</title>
+</head>
+<body>
+     <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                        <h1 class="card-title text-center text-primary mb-4">Conversor Celsius</h1>
+
+                        <div id="error-message" class="alert alert-danger" role="alert" style="display: none;">
+                            </div>
+
+                        <div class="mb-3">
+                            <label for="celsiusInput" class="form-label">Temperatura en Grados Celsius (°C):</label>
+                            <input type="text" id="celsiusInput" class="form-control form-control-lg" placeholder="Ej: 25.5" required>
+                        </div>
+                        
+                        <button id="convertirBtn" class="btn btn-primary btn-lg w-100 mb-4">Convertir</button>
+
+                        <div id="resultado" class="border-top pt-3" style="display: none;">
+                            <h3 class="h5 mb-3 text-secondary">Resultados:</h3>
+                            <p class="mb-2">Celsius (°C): <span id="outputCelsius" class="celsius fs-4"></span></p>
+                            <p class="mb-2">Fahrenheit (°F): <span id="outputFahrenheit" class="fahrenheit fs-4"></span></p>
+                            <p class="mb-0">Kelvin (K): <span id="outputKelvin" class="kelvin fs-4"></span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
