@@ -233,3 +233,35 @@ footer {
   background-color: white;
   color: var(--oscuro);
 }
+/*Página Blog*/
+.btn-blog {
+  background-color: transparent;
+  border: 2px solid #d4a95a;
+  color: var(--verde-oscuro);
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-blog:hover {
+  background-color: #d4a95a;
+  color: white;
+}
+
+.dark-mode .btn-blog {
+  color: var(--beige);
+  border-color: #d4a95a;
+}
+
+.dark-mode .btn-blog:hover {
+  background-color: #d4a95a;
+  color: var(--oscuro);
+}
+.modal-body, .modal-header {
+  color: var(--verde-oscuro);
+  background-color: var(--beige);
+}
+.dark-mode .modal-body, .dark-mode .modal-header {
+  color: var(--beige);
+  background-color: var(--oscuro);
+}
+
