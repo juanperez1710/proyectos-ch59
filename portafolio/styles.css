@@ -264,4 +264,49 @@ footer {
   color: var(--beige);
   background-color: var(--oscuro);
 }
+/*Página de proyectos*/
+.proyecto-card {
+  background-color: var(--beige);
+  border: 2px solid #d4a95a;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.proyecto-card:hover {
+  transform: scale(1.02);
+}
+
+.proyecto-img img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #d4a95a;
+}
+
+.btn-proyecto {
+  border: 2px solid #d4a95a;
+  color: var(--verde-oscuro);
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.btn-proyecto:hover {
+  background-color: #d4a95a;
+  color: white;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #d4a95a;
+}
+.dark-mode .proyecto-card {
+  background-color: var(--beige);
+  color: var(--oscuro);
+  border: 2px solid #d4a95a;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
 
