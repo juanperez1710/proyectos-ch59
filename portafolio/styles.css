@@ -118,7 +118,7 @@ footer {
   z-index: 999;
 }
 .social-icons i {
-  font-size: 2.2rem; /* Aumentado desde 1.5rem */
+  font-size: 2.2rem; 
   color: var(--verde-oscuro);
   transition: color 0.3s ease;
 }
@@ -133,4 +133,103 @@ footer {
 
 .dark-mode .icon-link:hover i {
   color: var(--dorado);
+}
+
+/*Página Sobre mí*/
+.perfil-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #d4a95a;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.perfil-img:hover {
+  transform: scale(1.03);
+}
+/*Página Experiencia*/
+.exp-img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  border: 5px solid #d4a95a;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.exp-img:hover {
+  transform: scale(1.03);
+}
+/*Página Skills */
+.skill-card {
+  background-color: var(--beige);
+  border: 2px solid #d4a95a;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+.dark-mode .skill-card {
+  border: 2px solid #d4a95a;
+  background-color: #2e3b2c;
+  color: var(--beige);
+}
+/*Página Cursos*/
+.curso-card {
+  background-color: var(--beige);
+  border: 2px solid #d4a95a;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.curso-card:hover {
+  transform: scale(1.02);
+}
+
+.curso-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #d4a95a;
+}
+.dark-mode .curso-card {
+  border: 2px solid #d4a95a;
+  background-color: var(--oscuro);
+  color: var(--beige);
+}
+.btn-certificado {
+  border: 2px solid #d4a95a;
+  color: var(--verde-oscuro);
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-certificado:hover {
+  background-color: #d4a95a;
+  color: white;
+}
+
+.dark-mode .btn-certificado {
+  border: 2px solid white;
+  color: var(--beige);
+}
+
+.dark-mode .btn-certificado:hover {
+  background-color: white;
+  color: var(--oscuro);
 }
